@@ -9,3 +9,6 @@ export { default as Product } from "./Dashboard/Product/Products";
 /* -- Other Components -- */
 export { default as Spinner } from "./Spinner";
 export { default as NotFound } from "./NotFound";
+
+/* -- Nobati24.ir Components -- */
+export { default as FirstPage } from "./Nobati/FirstPage";
