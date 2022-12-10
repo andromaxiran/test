@@ -21,10 +21,6 @@ const SideBar = () => {
                           <span className={"mx-2"}><i className="fa fa-user" aria-hidden="true"/></span>
                           کاربران
                       </NavLink>
-                      <NavLink to="/dashboard/orders">
-                          <span className={"mx-2"}><i className="fa fa-recycle" aria-hidden="true"/></span>
-                          سفارشات
-                      </NavLink>
                       <NavLink to="/dashboard/update"
                              >
                           <span className={"mx-2"}><i className="fa fa-cogs" aria-hidden="true"/></span>
