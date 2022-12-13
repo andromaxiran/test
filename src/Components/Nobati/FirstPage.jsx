@@ -2,7 +2,7 @@ import './FirstPage.css';
 const FirstPage =()=>{
     return(
         <>
-            <h3>First Page Component</h3>
+            <h3>First Page Component new</h3>
         </>
     )
 }
