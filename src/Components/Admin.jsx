@@ -1,5 +1,5 @@
 import MainLayout from "./Dashboard/Layout/MainLayout";
-import {Product, Read, Update , FirstPage} from "./index";
+import {Product, Read, Update , HomePage} from "./index";
 import {Route, Routes} from "react-router-dom";
 import CreateProduct from "./Dashboard/Product/CreateProduct";
 import EditProduct from "./Dashboard/Product/EditProduct";
@@ -10,7 +10,7 @@ const Admin = () => {
     return (
 
             <Routes>
-                <Route path="/" element={<FirstPage/>}/>
+                <Route path="/" element={<HomePage/>}/>
                 <Route path="/dashboard" element={<MainLayout/>} >
                     <Route path="home" element={<Read />} />
                     <Route path="update" element={<Update/>}/>
