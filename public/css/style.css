@@ -9,3 +9,10 @@
   font-style: normal;
   font-display: swap;
 }
+/*a{*/
+/*  color: grey !important;*/
+/*}*/
+
+.dropdown-menu{
+  left: auto !important;
+}
