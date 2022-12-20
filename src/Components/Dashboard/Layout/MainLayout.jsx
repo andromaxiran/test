@@ -27,7 +27,6 @@ const MainLayout = () =>{
                         </div>
                     </div>
                 </div>
-
             </div>
             </div>
     )

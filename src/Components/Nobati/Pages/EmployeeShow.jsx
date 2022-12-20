@@ -5,19 +5,20 @@ import {MAIN} from "../../../helpers/colors";
 import {SideBar} from "./SideBar";
 import {Content} from "./Content";
 import {Footer} from "../Footer/Footer";
+import {EmployeeContent} from "./EmployeeContent";
 
-export const Categories = () => {
+const EmployeeShow = () => {
     return (
         <div>
             <Header/>
             <div className={'p-3 border-top'}>
-            <Search/>
+                <Search/>
             </div>
             <div style={{background:MAIN}} className={'row mx-0 col-12 p-5'}>
-                <div className={'d-sm-none d-md-block col-md-3 me-5'}>
-                    <SideBar/>
+                <div className={'col-12 col-md-7 mx-3'}>
+                    <EmployeeContent/>
                 </div>
-                <div className={'col col-md-8'}>
+                <div className={'col-12 col-md-4 mx-3'}>
                     <Content/>
                 </div>
             </div>
@@ -25,3 +26,4 @@ export const Categories = () => {
         </div>
     );
 };
+export default EmployeeShow;

@@ -6,6 +6,7 @@ import EditProduct from "./Dashboard/Product/EditProduct";
 import Users from "./Dashboard/User/Users";
 import EditUser from "./Dashboard/User/EditUser";
 import {Categories} from "./Nobati/Pages/Categories";
+import EmployeeShow from "./Nobati/Pages/EmployeeShow";
 
 const Admin = () => {
     return (
@@ -13,6 +14,7 @@ const Admin = () => {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/category" element={<Categories/>}/>
+                <Route path="/show" element={<EmployeeShow/>}/>
                 <Route path="/dashboard" element={<MainLayout/>} >
                     <Route path="home" element={<Read />} />
                     <Route path="update" element={<Update/>}/>
