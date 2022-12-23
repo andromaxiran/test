@@ -127,7 +127,43 @@ export const EmployeeContent = () => {
                     <span>نظر خود را به اشتراک بگذارید:</span>
                     <button className={'btn btn-outline-success'}>ثبت نظر</button>
                 </div>
+                <div className="card mt-2">
+                    <div className="card-header">
+                        نظر توسط مانیکا
+                    </div>
+                    <div className="card-body">
+                        <h5 className="card-title text-success"><i className={'fa fa-thumbs-o-up'} aria-hidden="true"/> توصیه می‌کنم</h5>
+                        <p className="card-text">
+                            دریک کلام بهترین مشاور و روانپزشکی که تا حالا صحبت کردم ارامش از کلامشون جاری هست
+                        </p>
+                        <span className={'float-start'}><i className="fa fa-reply" aria-hidden="true"/> پاسخ</span>
+                    </div>
+                    <div className="card-footer text-muted ps-5 pe-5 pt-2">
+                        <span>پاسخ جویی</span>
+                        <p>ازنظربنده هم بهترین روانپزشک هستن ایشون، صبور ودانا</p>
+                        2 days ago
+                    </div>
+                </div>
+                <div className="card mt-2">
+                    <div className="card-header">
+                        نظر توسط مانیکا
+                    </div>
+                    <div className="card-body">
+                        <h5 className="card-title text-warning"><i className={'fa fa-thumbs-o-down'} aria-hidden="true"/> توصیه نمی‌کنم</h5>
+                        <p className="card-text">
+                            دریک کلام بهترین مشاور و روانپزشکی که تا حالا صحبت کردم ارامش از کلامشون جاری هست
+                        </p>
+                        <span className={'float-start'}><i className="fa fa-reply" aria-hidden="true"/> پاسخ</span>
+                    </div>
+                    <div className="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+                <div className={'text-center mt-4'}>
+                    <button className={'btn btn-outline-secondary'}>نمایش نظرات بیشتر</button>
+                </div>
             </div>
+
         </div>
     );
 };

@@ -2,10 +2,9 @@ import * as React from 'react';
 import Header from "../Header/Header";
 import {Search} from "../Components/Search";
 import {MAIN} from "../../../helpers/colors";
-import {SideBar} from "./SideBar";
-import {Content} from "./Content";
 import {Footer} from "../Footer/Footer";
 import {EmployeeContent} from "./EmployeeContent";
+import EmployeeNobat from "./EmployeeNobat";
 
 const EmployeeShow = () => {
     return (
@@ -19,7 +18,7 @@ const EmployeeShow = () => {
                     <EmployeeContent/>
                 </div>
                 <div className={'col-12 col-md-4 mx-3'}>
-                    <Content/>
+                    <EmployeeNobat/>
                 </div>
             </div>
             <Footer/>
