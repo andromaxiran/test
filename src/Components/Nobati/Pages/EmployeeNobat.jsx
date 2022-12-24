@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Link} from "react-router-dom";
 
 const EmployeeNobat = () => {
     return (
@@ -10,7 +11,7 @@ const EmployeeNobat = () => {
                 <p className={'border-end pe-2'}>امکان دریافت زودترین نوبت</p>
                 <p className={'border-end pe-2'}>هزینه :120,000  تومان</p>
                 <div className={'text-center'}>
-                    <button className={'btn btn-primary w-75'}>دریافت نوبت</button>
+                    <Link to={'/booking'}><button className={'btn btn-primary w-75'}>دریافت نوبت</button></Link>
                 </div>
             </div>
             <h5 className={'mt-4'}><b>آدرس و تلفن تماس</b></h5>

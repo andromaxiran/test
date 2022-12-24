@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../Components/Logo";
 import {Login} from "../Auth/Login";
+import {NavLink} from "react-router-dom";
 
 const Header =()=> {
     return (
@@ -19,7 +20,10 @@ const Header =()=> {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
+                       <Nav.Link>
+                        <NavLink to="/category">Home</NavLink>
+
+                       </Nav.Link>
                         <Nav.Link href="#action2">Link</Nav.Link>
                         <NavDropdown className={'top-0'} title="Link" >
                             <NavDropdown.Item style={{left :'0'}} href="#action3" className={'text-center'}>Action</NavDropdown.Item>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styles from './Content.module.scss';
+import {Link} from "react-router-dom";
 
 export const Content = () => {
     return (
@@ -48,7 +49,11 @@ export const Content = () => {
                     </div>
                     <div className={'row p-3'}>
                         <div className={'col text-center'}>
-                            <button className={'btn btn-primary w-100'}> نوبت دهی اینترنتی</button>
+                            <Link to={'/show'} >
+                            <button className={'btn btn-primary w-100'}>
+                                نوبت دهی اینترنتی
+                            </button>
+                            </Link>
                         </div>
                         <div className={'col text-center'}>
                             <button className={'btn btn-outline-light w-100 text-dark border-dark'}> نوبت دهی تلفنی</button>
