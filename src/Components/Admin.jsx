@@ -9,6 +9,7 @@ import {Categories} from "./Nobati/Pages/Categories";
 import EmployeeShow from "./Nobati/Pages/EmployeeShow";
 import Booking from "./Nobati/Pages/Booking";
 import Info from "./Nobati/User/Info";
+import EditNewUser from "./Nobati/User/EditNewUser";
 
 const Admin = () => {
     return (
@@ -18,7 +19,9 @@ const Admin = () => {
                 <Route path="/category" element={<Categories/>}/>
                 <Route path="/show" element={<EmployeeShow/>}/>
                 <Route path="/booking" element={<Booking/>}/>
-                <Route path="/user" element={<Info/>}/>
+                <Route path="/user" element={<Info/>} >
+                    <Route path="home" element={<EditNewUser />} />
+                </Route>
                 <Route path="/dashboard" element={<MainLayout/>} >
                     <Route path="home" element={<Read />} />
                     <Route path="update" element={<Update/>}/>
