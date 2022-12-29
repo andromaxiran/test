@@ -10,6 +10,9 @@ import EmployeeShow from "./Nobati/Pages/EmployeeShow";
 import Booking from "./Nobati/Pages/Booking";
 import Info from "./Nobati/User/Info";
 import EditNewUser from "./Nobati/User/EditNewUser";
+import MyReserve from "./Nobati/User/MyReserve";
+import MyList from "./Nobati/User/MyList";
+import MyUsers from "./Nobati/User/MyUsers";
 
 const Admin = () => {
     return (
@@ -20,7 +23,11 @@ const Admin = () => {
                 <Route path="/show" element={<EmployeeShow/>}/>
                 <Route path="/booking" element={<Booking/>}/>
                 <Route path="/user" element={<Info/>} >
-                    <Route path="home" element={<EditNewUser />} />
+                    <Route index element={<EditNewUser />} />
+                    <Route path="editUser" element={<EditNewUser />} />
+                    <Route path="my-reserve" element={<MyReserve />} />
+                    <Route path="my-list" element={<MyList />} />
+                    <Route path="my-users" element={<MyUsers />} />
                 </Route>
                 <Route path="/dashboard" element={<MainLayout/>} >
                     <Route path="home" element={<Read />} />

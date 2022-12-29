@@ -1,9 +1,7 @@
 * {
     outline: none;
     box-sizing: border-box; }
-.active{
-    border: 1px solid;
-}
+
 :root {
     --theme-bg-color: rgba(16 18 27 / 40%);
     --border-color: rgba(113 119 144 / 25%);
