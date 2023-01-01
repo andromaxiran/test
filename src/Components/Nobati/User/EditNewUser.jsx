@@ -6,10 +6,10 @@ const EditNewUser = () => {
             <div className={'container'}>
                 <div className={'form-check-inline'}>
                     <label htmlFor={'name'}>نام</label>
-                    <input type={'text'} className={'form-control'} placeholder={'نام را وارد کنید'}/>
+                    <input type={'text'}  className={'form-control'} placeholder={'نام را وارد کنید'}/>
                 </div>
                 <div className={'form-check-inline'}>
-                    <label htmlFor={'name'}>نام خانوادگی</label>
+                    <label>نام خانوادگی</label>
                     <input type={'text'} className={'form-control'} placeholder={'نام خانوادگی را وارد کنید'}/>
                 </div>
                 <button className={'btn btn-outline-success me-3'}>ثبت تغییرات</button>

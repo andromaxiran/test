@@ -13,6 +13,11 @@ import EditNewUser from "./Nobati/User/EditNewUser";
 import MyReserve from "./Nobati/User/MyReserve";
 import MyList from "./Nobati/User/MyList";
 import MyUsers from "./Nobati/User/MyUsers";
+import Jobs from "./Nobati/User/Job/Jobs";
+import {EditNewJob} from "./Nobati/User/Job/EditNewJob";
+import {EmployeeJob} from "./Nobati/User/Job/EmployeeJob";
+import {AddEmployee} from "./Nobati/User/Job/AddEmployee";
+import {ReserveTimes} from "./Nobati/User/Job/ReserveTimes";
 
 const Admin = () => {
     return (
@@ -28,6 +33,14 @@ const Admin = () => {
                     <Route path="my-reserve" element={<MyReserve />} />
                     <Route path="my-list" element={<MyList />} />
                     <Route path="my-users" element={<MyUsers />} />
+                </Route>
+                <Route path="/job" element={<Jobs/>}>
+                    <Route index  element={<EditNewJob/>} />
+                    <Route path="edit-job" element={<EditNewJob/>} />
+                    <Route path="employee-job" element={<EmployeeJob/>} />
+                    <Route path="add-employee" element={<AddEmployee/>} />
+                    <Route path="reserve-times" element={<ReserveTimes/>} />
+
                 </Route>
                 <Route path="/dashboard" element={<MainLayout/>} >
                     <Route path="home" element={<Read />} />
