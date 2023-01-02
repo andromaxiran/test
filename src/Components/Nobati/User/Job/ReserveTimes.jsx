@@ -109,7 +109,6 @@ export const ReserveTimes = () => {
              </select>
          </div>
             <button className={'btn btn-outline-success'}>ثبت</button>
-
         </>
     );
 };

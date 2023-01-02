@@ -1,10 +1,6 @@
-import MainLayout from "./Dashboard/Layout/MainLayout";
-import {Product, Read, Update, HomePage, NotFound} from "./index";
+import { HomePage, NotFound} from "./index";
 import {Route, Routes} from "react-router-dom";
-import CreateProduct from "./Dashboard/Product/CreateProduct";
-import EditProduct from "./Dashboard/Product/EditProduct";
-import Users from "./Dashboard/User/Users";
-import EditUser from "./Dashboard/User/EditUser";
+
 import {Categories} from "./Nobati/Pages/Categories";
 import EmployeeShow from "./Nobati/Pages/EmployeeShow";
 import Booking from "./Nobati/Pages/Booking";
@@ -18,12 +14,14 @@ import {EditNewJob} from "./Nobati/User/Job/EditNewJob";
 import {EmployeeJob} from "./Nobati/User/Job/EmployeeJob";
 import {AddEmployee} from "./Nobati/User/Job/AddEmployee";
 import {ReserveTimes} from "./Nobati/User/Job/ReserveTimes";
+import {LoginUser} from "./Nobati/Auth/LoginUser";
 
 const Admin = () => {
     return (
 
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
+                <Route path="/login" element={<LoginUser/>}/>
                 <Route path="/category" element={<Categories/>}/>
                 <Route path="/show" element={<EmployeeShow/>}/>
                 <Route path="/booking" element={<Booking/>}/>
@@ -41,15 +39,6 @@ const Admin = () => {
                     <Route path="add-employee" element={<AddEmployee/>} />
                     <Route path="reserve-times" element={<ReserveTimes/>} />
 
-                </Route>
-                <Route path="/dashboard" element={<MainLayout/>} >
-                    <Route path="home" element={<Read />} />
-                    <Route path="update" element={<Update/>}/>
-                    <Route path="products" element={<Product/>}/>
-                    <Route path="products/create" element={<CreateProduct/>}/>
-                    <Route path="products/edit" element={<EditProduct/>}/>
-                    <Route path="users" element={<Users/>}/>
-                    <Route path="users/edit" element={<EditUser/>}/>
                 </Route>
                 <Route path={'*'} element={<NotFound/>}/>
             </Routes>
