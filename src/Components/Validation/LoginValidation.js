@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-const mobileIran = /^(?:0|98|\+98|\+980|0098|098|00980)?(9\d{9})$/ ;
+const mobileIran = /^(09\d{9})$/ ;
 export const loginSchema = Yup.object().shape({
     name: Yup.string().required("نام و نام خانوادگی الزامی می باشد"),
     mobile: Yup.string().required("شماره موبایل الزامی می باشد").matches(mobileIran, 'شماره موبایل اشتباه است'),

@@ -15,12 +15,25 @@ import {EmployeeJob} from "./Nobati/User/Job/EmployeeJob";
 import {AddEmployee} from "./Nobati/User/Job/AddEmployee";
 import {ReserveTimes} from "./Nobati/User/Job/ReserveTimes";
 import {LoginUser} from "./Nobati/Auth/LoginUser";
+import {Test} from "./Nobati/Auth/test";
+import {useState} from "react";
+import {AuthContext} from "../context/authContext";
 
 const Admin = () => {
+
+
+
+    const [loading , setLoading] = useState(false);
     return (
+        <AuthContext.Provider value={{
+             loading,
+             setLoading,
+        }}>
+
 
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
+                <Route path="/test" element={<Test/>}/>
                 <Route path="/login" element={<LoginUser/>}/>
                 <Route path="/category" element={<Categories/>}/>
                 <Route path="/show" element={<EmployeeShow/>}/>
@@ -42,7 +55,7 @@ const Admin = () => {
                 </Route>
                 <Route path={'*'} element={<NotFound/>}/>
             </Routes>
-
+        </AuthContext.Provider>
     )
 }
 export default Admin;

@@ -16,3 +16,10 @@
 .dropdown-menu{
   left: auto !important;
 }
+.Toastify__toast-body {
+  font-family: "Vazir", tahoma, serif !important;
+}
+.swal2-input{
+  width: 50% !important;
+  margin: auto !important;
+}

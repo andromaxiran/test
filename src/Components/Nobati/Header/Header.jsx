@@ -8,13 +8,13 @@ import {NavLink} from "react-router-dom";
 
 const Header =()=> {
     return (
-        <Navbar bg="white" expand="lg">
+        <Navbar expand="lg">
             <Container className={'justify-content-md-center'}>
                 <Navbar.Brand href="#">
                     <Logo/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
+                <Navbar.Collapse className={'justify-content-between'} id="navbarScroll">
                     <Nav
                         className="ms-auto my-2 my-lg-0"
                         style={{ maxHeight: '100px' }}
