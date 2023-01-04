@@ -21,8 +21,8 @@ import {Test} from "./test";
 export const LoginUser = () => {
     const navigate = useNavigate();
     const {loading,setLoading} = useContext(AuthContext);
-    const {mob,setMob} = useState();
-    setMob("123");
+    // const {mob,setMob} = useState();
+    // setMob("123");
     return (
         <div>
             <Helmet>
@@ -207,7 +207,7 @@ export const LoginUser = () => {
                         </div>
                     </div>
 
-                    <Test mob={mob}/>
+                    <Test/>
             <Footer/>
 
         </div>
