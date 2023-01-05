@@ -18,11 +18,16 @@ import {AuthContext} from "../../../context/authContext";
 
 import {Test} from "./test";
 
+
+
+
 export const LoginUser = () => {
     const navigate = useNavigate();
-    const {loading,setLoading} = useContext(AuthContext);
-    // const {mob,setMob} = useState();
-    // setMob("123");
+    const {loading,setLoading } = useContext(AuthContext);
+    const [show , setShow] = useState(false);
+    const [mob , setMob] = useState("");
+
+
     return (
         <div>
             <Helmet>
@@ -44,6 +49,7 @@ export const LoginUser = () => {
                                 }}
                                 validationSchema={loginSchema}
                                 onSubmit={async (values) => {
+                                    console.log(values.mobile);
                                     setLoading(true);
 
                                     try {
@@ -64,12 +70,15 @@ export const LoginUser = () => {
                                                 } else {
                                                     setLoading(false);
                                                     toast.error("خطایی پیش آمده بعدا تلاش کنید", {icon: "💣"});
+
                                                 }
                                             });
                                         });
                                     } catch (e) {
                                         toast.error('در ارتباط با سرور مشکلی پیش اومده!');
                                         setLoading(false);
+                                        setMob(values.mobile);
+                                        setShow(true);
                                     }
                                 }}
                             >
@@ -207,7 +216,10 @@ export const LoginUser = () => {
                         </div>
                     </div>
 
-                    <Test/>
+            {
+                show ? <Test mob={mob}/> : null
+            }
+
             <Footer/>
 
         </div>
