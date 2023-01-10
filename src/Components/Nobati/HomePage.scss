@@ -1,0 +1,36 @@
+.bazdid{
+  margin: 0px 5px;
+  span{
+    padding: 5px;
+    background: lightgrey;
+    border-radius: 10px;
+  }
+}
+.cat-title{
+  padding: 10px;
+  color: blue;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.h-300px{
+  max-height: 250px;
+  height: fit-content;
+}
+.sub-category{
+  border-right: 2px solid lightgrey;
+  margin-right: 25px;
+  .small-category{
+    margin-right: 15px;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+.filter-search{
+  border-top: 2px solid lightgrey;
+  padding: 10px;
+  margin: 10px;
+  .form-check-input{
+    width: 50px;
+    height: 25px;
+  }
+}
